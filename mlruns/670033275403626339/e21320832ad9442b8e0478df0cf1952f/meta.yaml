@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/670033275403626339/e21320832ad9442b8e0478df0cf1952f/artifacts
+end_time: 1732951023241
+entry_point_name: ''
+experiment_id: '670033275403626339'
+lifecycle_stage: active
+run_id: e21320832ad9442b8e0478df0cf1952f
+run_name: XGBoost Optimization
+run_uuid: e21320832ad9442b8e0478df0cf1952f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732951023228
+status: 4
+tags: []
+user_id: sayamkumar

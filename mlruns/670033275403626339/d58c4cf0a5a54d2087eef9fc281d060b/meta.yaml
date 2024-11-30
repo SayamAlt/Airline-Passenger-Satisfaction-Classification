@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/670033275403626339/d58c4cf0a5a54d2087eef9fc281d060b/artifacts
+end_time: 1732928363898
+entry_point_name: ''
+experiment_id: '670033275403626339'
+lifecycle_stage: active
+run_id: d58c4cf0a5a54d2087eef9fc281d060b
+run_name: KNN_optimization
+run_uuid: d58c4cf0a5a54d2087eef9fc281d060b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732928363887
+status: 3
+tags: []
+user_id: sayamkumar

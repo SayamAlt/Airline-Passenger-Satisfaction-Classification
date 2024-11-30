@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/670033275403626339/8474e1c1ead74673ba0f48a189a2d129/artifacts
+end_time: 1732950157519
+entry_point_name: ''
+experiment_id: '670033275403626339'
+lifecycle_stage: active
+run_id: 8474e1c1ead74673ba0f48a189a2d129
+run_name: Extra Trees Optimization
+run_uuid: 8474e1c1ead74673ba0f48a189a2d129
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732950157507
+status: 3
+tags: []
+user_id: sayamkumar

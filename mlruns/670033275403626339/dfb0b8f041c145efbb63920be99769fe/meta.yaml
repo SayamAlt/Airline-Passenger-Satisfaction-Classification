@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/670033275403626339/dfb0b8f041c145efbb63920be99769fe/artifacts
+end_time: 1732949359093
+entry_point_name: ''
+experiment_id: '670033275403626339'
+lifecycle_stage: active
+run_id: dfb0b8f041c145efbb63920be99769fe
+run_name: Bernoulli NB Optimization
+run_uuid: dfb0b8f041c145efbb63920be99769fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732949359078
+status: 3
+tags: []
+user_id: sayamkumar

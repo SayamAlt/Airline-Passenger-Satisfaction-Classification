@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/670033275403626339/79adf172b10847d688bc294533f79b8d/artifacts
+end_time: 1732949215329
+entry_point_name: ''
+experiment_id: '670033275403626339'
+lifecycle_stage: active
+run_id: 79adf172b10847d688bc294533f79b8d
+run_name: Adaptive Boosting Optimization
+run_uuid: 79adf172b10847d688bc294533f79b8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732949215319
+status: 3
+tags: []
+user_id: sayamkumar

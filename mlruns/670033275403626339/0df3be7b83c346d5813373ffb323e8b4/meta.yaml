@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/670033275403626339/0df3be7b83c346d5813373ffb323e8b4/artifacts
+end_time: 1732941078370
+entry_point_name: ''
+experiment_id: '670033275403626339'
+lifecycle_stage: active
+run_id: 0df3be7b83c346d5813373ffb323e8b4
+run_name: Bagging Classifier Optimization
+run_uuid: 0df3be7b83c346d5813373ffb323e8b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732941078359
+status: 3
+tags: []
+user_id: sayamkumar

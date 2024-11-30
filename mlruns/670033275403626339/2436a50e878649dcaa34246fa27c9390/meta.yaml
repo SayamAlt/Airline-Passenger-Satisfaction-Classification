@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/670033275403626339/2436a50e878649dcaa34246fa27c9390/artifacts
+end_time: 1732939375163
+entry_point_name: ''
+experiment_id: '670033275403626339'
+lifecycle_stage: active
+run_id: 2436a50e878649dcaa34246fa27c9390
+run_name: Random Forest Optimization
+run_uuid: 2436a50e878649dcaa34246fa27c9390
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732939375152
+status: 3
+tags: []
+user_id: sayamkumar
