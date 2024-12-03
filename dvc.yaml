@@ -37,7 +37,7 @@ stages:
   deploy:
     cmd: ./run_flask.sh
     deps:
-      - app/app.py
+      - app.py
       - models/model.pkl
     outs:
       - deployed/
