@@ -8,7 +8,7 @@ stages:
       - models/model.pkl
 
   test:
-    cmd: python src/test_model.py models/model.pkl data/test.csv
+    cmd: python src/test_model.py models/model.pkl data/test.csv 
     deps:
       - src/test_model.py
       - models/model.pkl
