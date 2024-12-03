@@ -13,14 +13,15 @@ registered_model_name = "Airline Passenger Satisfaction Classifier"
 run_id = "" # Placeholder for the run_id
 
 # Fetch the latest version of the model in the 'Production' stage
-latest_versions = client.get_latest_versions(name=registered_model_name, stages=['Production'])
+try:
+    latest_versions = client.get_latest_versions(name=registered_model_name, stages=['Production'])
 
-if latest_versions:
-    latest_version = latest_versions[0].version # Get the latest version
-    run_id = latest_versions[0].run_id # Fetch the run_id of the latest version
-else:
-    print(f"No versions of the model '{registered_model_name}' found in the specified stage.")
-    run_id = "4c65882de40f46549fa2a40202513093" # Otherwise setting a default run_id
+    if latest_versions:
+        latest_version = latest_versions[0].version # Get the latest version
+        run_id = latest_versions[0].run_id # Fetch the run_id of the latest version
+except Exception as e:
+    print(f"Error fetching the latest version of the model: {e}")
+    run_id = "4c65882de40f46549fa2a40202513093" # Setting a default run_id
 
 try:
     # registered_model_name = 'Airline Passenger Satisfaction Classifier'
