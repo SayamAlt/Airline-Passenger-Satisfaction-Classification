@@ -57,16 +57,12 @@ jobs:
       #     ./run_flask.sh
 
       # Step 9: Deploy to Azure Web App
-      - name: Deploy to Azure Web App
-        run: |
-          echo "Deploying Flask app to Azure Web App"
-          curl -L https://github.com/Azure/actions-webapp-deploy/releases/download/v2.2.0/webapp-deploy-linux-x64.tar.gz | tar -xz
-          ./webapp-deploy-linux-x64/deploy.sh \
-            --publish-profile ${{ secrets.AZURE_WEBAPP_PUBLISH_URL }} \
-            --username ${{ secrets.AZURE_WEBAPP_USERNAME }} \
-            --password ${{ secrets.AZURE_WEBAPP_PASSWORD }} \
-            --webapp-name ${{ secrets.AZURE_WEBAPP_NAME }} \
-            --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }}
+      - name: Deploy Flask app to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+          package: .
         
       # Step 10: Notify deployment success
       - name: Notify Deployment Success 
