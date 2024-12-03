@@ -75,6 +75,18 @@ jobs:
           package: .
           image: airline-satisfaction-app:latest
         
-      # Step 11: Notify deployment success
+      # Step 11: Configure startup command for Azure App Service
+      - name: Configure Startup Command
+        run: |
+          az webapp config set --name ${{ secrets.AZURE_WEBAPP_NAME }} \
+            --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+            --startup-file "gunicorn -w 4 -b 0.0.0.0:8000 app.app:app"
+
+      # Step 12: Verify Azure Web App is running
+      - name: Verify Deployment
+        run: |
+          curl -I {{ secrets.AZURE_WEBAPP_NAME }}-akevhzeuh8btgffr.canadacentral-01.azurewebsites.net
+        
+      # Step 13: Notify deployment success
       - name: Notify Deployment Success 
         run: echo "Deployment Successful!"
