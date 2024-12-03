@@ -23,17 +23,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
-      
-      # Step 3: Create and activate virtual environment
-      - name: Create Virtual Environment
-        run: |
-          python -m venv venv
+          python-version: 3.8 
 
-      # Step 4: Install dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          . venv/bin/activate
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install dvc[all] mlflow joblib pandas flask
@@ -62,9 +56,10 @@ jobs:
           docker build -t airline-satisfaction-app .
 
       # Step 9: Run Docker image
-      - name: Run Docker app
+      - name: Run Docker image
         run: |
           docker run -d -p 5000:5000 airline-satisfaction-app
+
       # # Step 8: Deploy Flask App
       # - name: Deploy Flask App
       #   run: |
