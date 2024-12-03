@@ -15,5 +15,5 @@ RUN . venv/bin/activate && pip install -r requirements.txt
 # Expose the Flask app's port (default port for Flask is 5000, but we use 8000 for production on Azure)
 EXPOSE 8000
 
-# Command to run the app using Gunicorn
-CMD ["sh", "-c", ". venv/bin/activate && gunicorn -b 0.0.0.0:8000 app.app:app"]
+# Command to run the app
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "app.app:app"]
