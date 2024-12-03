@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/4726485598f3467494dad2530475217a/artifacts
+end_time: 1733111846189
+entry_point_name: ''
+experiment_id: '594113527903238029'
+lifecycle_stage: active
+run_id: 4726485598f3467494dad2530475217a
+run_name: VotingClassifier
+run_uuid: 4726485598f3467494dad2530475217a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733111846088
+status: 3
+tags: []
+user_id: sayamkumar

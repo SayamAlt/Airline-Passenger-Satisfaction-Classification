@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/8272af1c983d475f9d082ffd7266a16c/artifacts
+end_time: 1733111715897
+entry_point_name: ''
+experiment_id: '594113527903238029'
+lifecycle_stage: active
+run_id: 8272af1c983d475f9d082ffd7266a16c
+run_name: DecisionTreeClassifier
+run_uuid: 8272af1c983d475f9d082ffd7266a16c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733111715816
+status: 3
+tags: []
+user_id: sayamkumar

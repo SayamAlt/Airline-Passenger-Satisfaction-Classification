@@ -1,0 +1,16 @@
+aliases: []
+creation_timestamp: 1733170235742
+current_stage: Archived
+description: null
+last_updated_timestamp: 1733186090276
+name: Airline Passenger Satisfaction Classifier
+run_id: b7d3d988b61644599f825a249c316271
+run_link: null
+source: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/b7d3d988b61644599f825a249c316271/artifacts/Stacking
+  Classifier
+status: READY
+status_message: null
+storage_location: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/b7d3d988b61644599f825a249c316271/artifacts/Stacking
+  Classifier
+user_id: null
+version: 3

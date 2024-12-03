@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/23ac8b22c53249feb8d7b92b840751d4/artifacts
+end_time: 1733110892938
+entry_point_name: ''
+experiment_id: '594113527903238029'
+lifecycle_stage: active
+run_id: 23ac8b22c53249feb8d7b92b840751d4
+run_name: LogisticRegression
+run_uuid: 23ac8b22c53249feb8d7b92b840751d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733110892483
+status: 4
+tags: []
+user_id: sayamkumar

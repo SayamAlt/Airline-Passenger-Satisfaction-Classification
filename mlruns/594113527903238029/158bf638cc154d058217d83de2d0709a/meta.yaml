@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/158bf638cc154d058217d83de2d0709a/artifacts
+end_time: 1733173494988
+entry_point_name: ''
+experiment_id: '594113527903238029'
+lifecycle_stage: active
+run_id: 158bf638cc154d058217d83de2d0709a
+run_name: Model Training
+run_uuid: 158bf638cc154d058217d83de2d0709a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733173494900
+status: 3
+tags: []
+user_id: sayamkumar

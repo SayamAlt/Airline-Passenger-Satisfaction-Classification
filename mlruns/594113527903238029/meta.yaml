@@ -1,0 +1,6 @@
+artifact_location: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029
+creation_time: 1733110892271
+experiment_id: '594113527903238029'
+last_update_time: 1733110892271
+lifecycle_stage: active
+name: dvc_retrain_model

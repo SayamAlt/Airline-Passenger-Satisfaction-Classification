@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/94ccf3a3f02748fe8d9f0bafa4f77895/artifacts
+end_time: 1733111179312
+entry_point_name: ''
+experiment_id: '594113527903238029'
+lifecycle_stage: active
+run_id: 94ccf3a3f02748fe8d9f0bafa4f77895
+run_name: NGBClassifier
+run_uuid: 94ccf3a3f02748fe8d9f0bafa4f77895
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733111179203
+status: 3
+tags: []
+user_id: sayamkumar

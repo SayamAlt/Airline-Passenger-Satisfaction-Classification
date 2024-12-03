@@ -1,0 +1,20 @@
+artifact_path: Stacking Classifier
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.2
+mlflow_version: 2.18.0
+model_size_bytes: 7194163
+model_uuid: e1fc2494fdbf47e2af2d8d4d4da4250c
+run_id: b7d3d988b61644599f825a249c316271
+utc_time_created: '2024-12-02 20:10:31.714413'

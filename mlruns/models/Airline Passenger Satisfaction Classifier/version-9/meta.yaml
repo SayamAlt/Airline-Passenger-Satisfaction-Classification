@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1733186743177
+current_stage: None
+description: null
+last_updated_timestamp: 1733186743177
+name: Airline Passenger Satisfaction Classifier
+run_id: 2aa8ba6aa48047eda05de92fd1568947
+run_link: null
+source: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/2aa8ba6aa48047eda05de92fd1568947/artifacts/file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/4c65882de40f46549fa2a40202513093/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/2aa8ba6aa48047eda05de92fd1568947/artifacts/file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/4c65882de40f46549fa2a40202513093/artifacts/model
+user_id: null
+version: 9

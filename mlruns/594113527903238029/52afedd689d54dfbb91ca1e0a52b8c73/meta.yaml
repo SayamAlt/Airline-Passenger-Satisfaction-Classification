@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sayamkumar/Desktop/Data%20Science%20Projects/Airline%20Passenger%20Satisfaction/mlruns/594113527903238029/52afedd689d54dfbb91ca1e0a52b8c73/artifacts
+end_time: 1733111727402
+entry_point_name: ''
+experiment_id: '594113527903238029'
+lifecycle_stage: active
+run_id: 52afedd689d54dfbb91ca1e0a52b8c73
+run_name: GaussianNB
+run_uuid: 52afedd689d54dfbb91ca1e0a52b8c73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733111727325
+status: 3
+tags: []
+user_id: sayamkumar
