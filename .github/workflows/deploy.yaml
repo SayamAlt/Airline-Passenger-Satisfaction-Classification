@@ -11,6 +11,8 @@ on:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write 
 
     steps:
       # Step 1: Checkout the repository
