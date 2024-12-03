@@ -29,13 +29,12 @@ jobs:
       - name: Create Virtual Environment
         run: |
           python -m venv venv
-          . venv/bin/activate
-          python -m pip install --upgrade pip
 
       # Step 4: Install dependencies
       - name: Install dependencies
         run: |
           . venv/bin/activate
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install dvc[all] mlflow joblib pandas flask
 
@@ -62,13 +61,17 @@ jobs:
         run: |
           docker build -t airline-satisfaction-app .
 
+      # Step 9: Run Docker image
+      - name: Run Docker app
+        run: |
+          docker run -d -p 5000:5000 airline-satisfaction-app
       # # Step 8: Deploy Flask App
       # - name: Deploy Flask App
       #   run: |
       #     chmod +x run_flask.sh
       #     ./run_flask.sh
 
-      # Step 9: Deploy to Azure Web App
+      # Step 10: Deploy to Azure Web App
       - name: Deploy Flask app to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
@@ -77,9 +80,6 @@ jobs:
           package: .
           image: airline-satisfaction-app:latest
         
-      - name: Run Docker app
-        run: |
-          docker run -p 5000:5000 airline-satisfaction-app
-      # Step 10: Notify deployment success
+      # Step 11: Notify deployment success
       - name: Notify Deployment Success 
         run: echo "Deployment Successful!"
