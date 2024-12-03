@@ -36,16 +36,24 @@ jobs:
           dvc remote add -d myremote ./dvc_remote_storage
           dvc remote list
 
-      # Step 5: Create a Docker image
-      - name: Build Docker Image
-      run: |
-        docker build -t airline-satisfaction-app .
+      # Step 5: Pull data and artifacts
+      - name: Pull DVC Artifacts
+        run: dvc pull
 
-      # Step 6: Run Flask app in the background
-      - name: Start Flask App in Background
+      # Step 6: Run DVC pipeline stages
+      - name: Run DVC Pipeline
+        run: dvc repro
+
+      # Step 7: Push results to DVC remote
+      - name: Push DVC Artifacts
+        run: dvc push
+
+      # Step 8: Deploy Flask App
+      - name: Deploy Flask App
         run: |
-          docker run -d -p 2000:2000 airline-satisfaction-app
-
-      # Step 11: Notify deployment success
+          chmod +x run_flask.sh
+          ./run_flask.sh
+      
+      # Step 9: Notify deployment success
       - name: Notify Deployment Success 
         run: echo "Deployment Successful!"
