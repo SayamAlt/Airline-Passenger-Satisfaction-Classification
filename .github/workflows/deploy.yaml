@@ -44,7 +44,7 @@ jobs:
       - name: Run DVC Pipeline
         run: dvc repro
 
-      # Step 7: Push results to DVC remote
+      # Step 7: Push results to DVC remote storage
       - name: Push DVC Artifacts
         run: dvc push
 

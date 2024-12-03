@@ -78,4 +78,4 @@ def predict():
             return render_template('index.html', prediction_text="The passenger is satisfied with services provided by the airline.")
 
 if __name__ == '__main__':
-    app.run(port=2000)
+    app.run(port=4500)
