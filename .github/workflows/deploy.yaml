@@ -36,6 +36,25 @@ jobs:
           dvc remote add -d myremote ./dvc_remote_storage
           dvc remote list
 
+      # Step 5: Azure Login using Service Principal
+      - name: 'Login to Azure'
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+
+      # Step 6: Set the subscription for deployment
+      - name: 'Set Azure Subscription'
+        run: |
+          az account set --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      # Step 7: Check if Azure Web App exists and create it if necessary
+      - name: 'Create Azure Web App (if not exists)'
+        run: |
+          az webapp show --name ${{ secrets.AZURE_WEBAPP_NAME }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} || \
+          az webapp create --name ${{ secrets.AZURE_WEBAPP_NAME }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --plan B1 --runtime "PYTHON|3.8"
+
       # Step 5: Pull data and artifacts
       - name: Pull DVC Artifacts
         run: dvc pull
@@ -48,12 +67,17 @@ jobs:
       - name: Push DVC Artifacts
         run: dvc push
 
-      # Step 8: Deploy Flask App
-      - name: Deploy Flask App
+      # # Step 8: Deploy Flask App
+      # - name: Deploy Flask App
+      #   run: |
+      #     chmod +x run_flask.sh
+      #     ./run_flask.sh
+
+      # Step 9: Deploy to Azure Web App
+      - name: 'Deploy Flask app to Azure Web App'
         run: |
-          chmod +x run_flask.sh
-          ./run_flask.sh
-      
-      # Step 9: Notify deployment success
+          az webapp up --name ${{ secrets.AZURE_WEBAPP_NAME }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --plan B1 --sku B1 --location eastus
+        
+      # Step 10: Notify deployment success
       - name: Notify Deployment Success 
         run: echo "Deployment Successful!"

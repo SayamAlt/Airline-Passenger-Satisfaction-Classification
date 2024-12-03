@@ -32,10 +32,10 @@ else
     echo "MLflow server is already running."
 fi
 
-# Start the Flask app in the background
-nohup python app.py &
+# # Start the Flask app in the background
+# nohup python app.py &
 
-# Now the Flask app is running in the background, and the script continues
-# Perform any additional tasks, such as logging, metrics collection, etc.
+# # Now the Flask app is running in the background, and the script continues
+# # Perform any additional tasks, such as logging, metrics collection, etc.
 
-echo "Flask app is running in the background."
+# echo "Flask app is running in the background."
