@@ -1,18 +1,16 @@
-# Use official Python runtime as a parent image
+# Pull from light Python:3.8 base Docker image
 FROM python:3.8-slim
 
-# Set the working directory in the container
+# Set working directory
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
+# Copy application files
 COPY . /app
 
 # Install dependencies
-RUN python -m venv venv
-RUN . venv/bin/activate && pip install --upgrade pip
-RUN . venv/bin/activate && pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the Flask app's port (default port for Flask is 5000, but we use 8000 for production on Azure)
+# Expose port
 EXPOSE 8000
 
 # Command to run the app
